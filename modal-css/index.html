@@ -2,11 +2,60 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CSS实现modal</title>
-  <link rel="stylesheet" href="modal.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.6);
+      display: none;
+    }
+
+    .modal:target {
+      display: block;
+    }
+
+    .modal .box {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 70%;
+      max-height: 500px;
+      background: #fff;
+      border-radius: 4px;
+    }
+
+    .modal .box>h2 {
+      position: relative;
+      padding: 10px;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .modal .box .close {
+      position: absolute;
+      top: 18px;
+      right: 10px;
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    .modal .content {
+      padding: 20px;
+    }
+  </style>
 </head>
+
 <body>
   <a href="#modal1">点我</a>
   <div class="modal" id="modal1">
@@ -19,4 +68,5 @@
     </div>
   </div>
 </body>
+
 </html>
