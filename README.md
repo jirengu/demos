@@ -2,3 +2,4 @@
 - [sticky菜单-多菜单覆盖效果](menu-sticky/index1.html) [预览](https://jirengu.github.io/demos/menu-sticky/index1.html)
 - [sticky菜单-多菜单推上去效果](menu-sticky/index2.html) [预览](https://jirengu.github.io/demos/menu-sticky/index2.html)
 - [纯CSS实现的modal](modal-css/index.html) [预览](https://jirengu.github.io/demos/modal-css/index.html)
+- [层叠上下文测试](stacking-context/index.html)  [预览](https://jirengu.github.io/demos/stacking-context/index.html)
